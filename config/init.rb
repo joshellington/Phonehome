@@ -3,7 +3,9 @@ require 'open-uri'
 require 'json'
 require 'date'
 require 'time'
-require 'tropo-webapi-ruby'
+require 'twilio-ruby'
+
+enable   :raise_errors, :sessions, :dump_errors, :logging, :show_exceptions
 
 def base_uri
   base_uri_raw = request.env["HTTP_HOST"]+request.env["SCRIPT_NAME"]

@@ -15,16 +15,13 @@ match '/' do
   erb :index
 end
 
-match '/send/:number/?' do
+match '/sms/send/:to/?' do
   url = params[:url]
-  number = "+"+params[:number]
+  to = "+"+params[:to]
 
-  t = Tropo::Generator.new
+  TwilioSMS.send(to, url)
+end
 
-  t.call(:to => number, :network => "SMS")
-  t.say(:value => url)
-
-  pp t.response
-
-  t.response
+match '/sms/get/?' do
+  TwilioSMS.get(params)
 end
