@@ -1,7 +1,9 @@
+<img src="http://www.sfgate.com/blogs/images/sfgate/sfmoms/2009/05/21/ss_et_large.jpg">
+
 Phonehome
 ===
 
-Twilio-enabled app to send a URL to your phone.
+Twilio-enabled app to send your current URL to a phone by SMS.
 
 Note: still in Twilio sandbox mode.
 

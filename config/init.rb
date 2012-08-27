@@ -4,6 +4,7 @@ require 'json'
 require 'date'
 require 'time'
 require 'twilio-ruby'
+require 'maruku'
 require './app/models/twilio'
 
 enable   :raise_errors, :sessions, :dump_errors, :logging, :show_exceptions

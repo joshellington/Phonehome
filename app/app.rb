@@ -12,6 +12,9 @@ end
 # Routes
 
 match '/' do
+  text = File.open('./README.md') { |f| f.read }
+  @html = Maruku.new(text).to_html
+
   erb :index
 end
 

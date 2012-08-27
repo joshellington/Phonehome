@@ -204,9 +204,19 @@ td { vertical-align: top; }
 
 
 body {
-  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:Georgia,serif;
+  padding:0;
+  margin:35px;
+  font-size:80%;
 }
 
+code {
+  background:#eee;
+  display:block;
+  padding:10px;
+  font-size:11px;
+  overflow: auto;
+}
 
 
 
