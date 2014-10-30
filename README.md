@@ -12,7 +12,7 @@ Usage
 
 Add the following bookmarklet code to a new bookmark:
 
-`javascript:(function(){var s=prompt("Enter the number you want to send to.","15035363309");if(s!=null&&s!=""){var req=new XMLHttpRequest();var u="http://phonehome-app.heroku.com/sms/send/"+s+"?url="+encodeURIComponent(window.location.href);req.open("GET",u,false);req.send(null)}})();`
+`javascript:(function(){var s=prompt("Enter the number you want to send to.","15035363309");if(s!=null&&s!=""){var req=new XMLHttpRequest();var u="http://phonehome-app.herokuapp.com/sms/send/"+s+"?url="+encodeURIComponent(window.location.href);req.open("GET",u,false);req.send(null)}})();`
 
 TODO
 ---
