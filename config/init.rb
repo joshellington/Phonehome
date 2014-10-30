@@ -3,7 +3,7 @@ require 'json'
 require 'date'
 require 'time'
 require 'twilio-ruby'
-require 'maruku'
+require 'redcarpet'
 require './app/models/twilio'
 
 enable   :raise_errors, :sessions, :dump_errors, :logging, :show_exceptions

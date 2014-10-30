@@ -13,7 +13,8 @@ end
 
 match '/' do
   text = File.open('./README.md') { |f| f.read }
-  @html = Maruku.new(text).to_html
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  @html = markdown.render(text)
 
   erb :index
 end
